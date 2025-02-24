@@ -12,7 +12,7 @@ func main() {
 
 	// Cấu hình CORS middleware
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5173"}, // Cho phép frontend truy cập
+		AllowOrigins:     []string{"https://todo-golang-frontend.onrender.com"}, // Cho phép frontend truy cập
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE"},
 		AllowHeaders:     []string{"Content-Type"},
 		AllowCredentials: true,
